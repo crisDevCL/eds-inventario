@@ -11,7 +11,7 @@ import Toast from './components/Toast'
 function ProtectedRoute({ children }) {
   const { session, loading } = useAuth()
   if (loading) return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', color: 'var(--muted)' }}>
+    <div style={{ display:'flex', alignItems:'center', justifyContent:'center', height:'100vh', color:'var(--muted)' }}>
       Cargando...
     </div>
   )
